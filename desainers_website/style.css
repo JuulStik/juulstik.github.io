@@ -1,0 +1,251 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #091229;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background-size: cover; /* cover the entire background */
+  background-position: center; /* center the background image */
+}
+
+#background {
+  background-image: url("midjourney_brain.png");
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+#content {
+  position: relative; /* Keep the content in a relative position */
+  z-index: 1; /* Move the content in front of the background */
+}
+
+#main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center the content horizontally */
+  align-items: center; /* center the content vertically */
+  width: 60%;
+  margin: 0 auto;
+}
+
+#company-name {
+  float: left;
+  padding: 14px;
+  font-size: 18px;
+  margin-right: 20vw;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  /* opacity: 0.5;
+  transition: opacity 0.2s ease-in; */
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 2px solid transparent; /* Add transparent borders */
+  transition: border-color 0.2s ease-in; /* Add transition for border color */
+}
+
+/* nav a:hover {
+  opacity: 1;
+} */
+
+nav a:hover {
+  border-color: white; /* Change border color on hover */
+}
+
+header {
+  text-align: center;
+  width: 100%; /* make the header take up the full width of the screen */
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center; /* center the welcome sign and the about us section*/
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+#welcome-sign {
+  opacity: 1;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgb(9, 18, 41, 0.7);
+  width: 20%; /* adjust the width of the welcome sign */
+  flex: 1; /* this will take up all the available space */
+}
+
+#about-us-section {
+  opacity: 1;
+  width: 40%; /* adjust the width of the about us section */
+  padding: 20px;
+  background-color: rgb(9, 18, 41, 0.7);
+  flex: 1; /* this will take up all the available space */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#about,
+#services,
+#contact {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  width: 100%;
+} */
+footer {
+  background-color: #091229;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Set the carousel container to take up the full width of the screen */
+/* div #project-carousel .carousel-container {
+  width: 100%;
+}
+
+#project-carousel .carousel-slide {
+  width: 100%;
+} */
+
+#project-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects {
+  text-align: center;
+  background-color: rgb(9, 18, 41, 0.7);
+  padding: 20px;
+  font-size: 3em;
+}
+
+/* Style the prev and next buttons */
+#project-carousel .prev,
+#project-carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a background color to the prev and next buttons */
+#project-carousel .prev:hover,
+#project-carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the prev button to the left */
+#project-carousel .prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the next button to the right */
+#project-carousel .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#project-carousel .carousel-slide img {
+  max-width: 100%; /* make the image responsive */
+  width: 100%;
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 10px;
+}
+
+/* Style the form container */
+form {
+  width: 80%;
+  padding: 0px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Style the form labels */
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Style the form inputs */
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1155cc;
+}

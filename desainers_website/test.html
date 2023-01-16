@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="test.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8c966b43c7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body onload="startCarousel()">
+    <nav>
+      <div id="company-name">desainers</div>
+      <a href="#about-section">About</a>
+      <a href="#carousel">Projects</a>
+      <a href="#sign-up-section">Sign up</a>
+      <a href="#contact-section">Contact</a>
+    </nav>
+    <div id="welcome-image">
+      <div class="welcome-sign">
+        <p id="welcome-text">Welcome to</p>
+      </div>
+      <div class="welcome-sign">
+        <p id="welcome-brand">des<span id="ai-decoration">ai</span>ners</p>
+      </div>
+      <div id="about-us-section" style="display: none">
+        <h2>Unlock the power of AI, elevate your website game with ChatGPT!</h2>
+        <p>
+          With our cutting-edge technology, you can use natural language
+          processing and machine learning to generate professional-grade HTML,
+          CSS, JavaScript, and PHP code.
+        </p>
+        <p>
+          Sign up for our course and discover the power of ChatGPT today! Learn
+          how to make a website that will help you achieve your goals and help
+          your business grow with the help of our course we will guide you
+          through every step of the process.
+        </p>
+      </div>
+      <button id="explore-button">
+        Explore the world of AI<i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <div id="about-section">
+      <h2>Enter the world of AI</h2>
+      <p>
+        ChatGPT is a powerful language model developed by OpenAI that can
+        understand and respond to human language. With its ability to understand
+        context and generate code, it makes website development more accessible
+        and efficient for people of all skill levels.
+      </p>
+      <p>
+        Whether you're a beginner or an experienced developer, our course will
+        give you the tools and knowledge you need to create professional-grade
+        websites with ease.
+      </p>
+      <p>
+        With our course, you'll learn how to use ChatGPT to create custom
+        layouts, design elements, and functionality for your website. You'll
+        also learn how to integrate ChatGPT with popular website building
+        platforms such as WordPress.
+      </p>
+    </div>
+    <section id="project-carousel">
+      <h2 id="projects">Projects</h2>
+      <div class="carousel-container">
+        <div id="carousel" class="carousel-slide">
+          <img src="midjourney_brain.png" alt="Project 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="mj_laptop.png" alt="Project 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="brain.png" alt="Project 3" />
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <div id="sign-up-section">
+      <form class="form-container">
+        <h2>Sign Up</h2>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I accept the terms and conditions</label>
+        </div>
+        <div class="form-row">
+          <input type="submit" value="Sign Up" />
+        </div>
+      </form>
+      <div id="sign-up-text">
+        <h2>Why?</h2>
+        <p>
+          Don't miss out on the opportunity to take your website building skills
+          to the next level with our cutting-edge courses. Sign up now and start
+          creating professional websites with ease using GPT-3 and HTML, CSS,
+          JavaScript, and PHP.
+        </p>
+      </div>
+    </div>
+    <div id="contact-section">
+      <a class="fa fa-google" href="mailto:juulstikkelbroeck@gmail.com"></a>
+      <a class="fa fa-wordpress" href="#projects"></a>
+      <a href="#projects" class="fa fa-github"></a>
+    </div>
+    <footer>
+      <p>Copyright ©2023 Desainers</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

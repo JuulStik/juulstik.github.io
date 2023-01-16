@@ -1,0 +1,449 @@
+body {
+  background-color: black;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 2vw auto;
+  max-width: 100vw;
+  z-index: 1;
+}
+
+#company-name {
+  padding: 2vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  padding: 2vw;
+  border: 2px solid transparent; /* Add transparent borders */
+  transition: border-color 0.3s ease-in; /* Add transition for border color */
+}
+
+nav a:hover {
+  border-color: white; /* Change border color on hover */
+}
+
+#welcome-image {
+  background-image: url("midjourney_brain_2.png");
+  background-size: cover;
+  background-position: center 25%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.welcome-sign {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-text {
+  font-size: 6vw; /* adjust as needed */
+  font-weight: bold;
+  text-align: center;
+  color: #fff; /* adjust as needed */
+  text-shadow: 2px 2px 4px #000000;
+  margin-left: 80px;
+}
+
+#welcome-brand {
+  font-size: 6vw; /* adjust as needed */
+  font-weight: bold;
+  text-align: center;
+  color: #fff; /* adjust as needed */
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+#ai-decoration {
+  color: #ff90f4;
+}
+
+#about-us-section {
+  color: white;
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-left: 4vw;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#explore-button {
+  background: none; /* no background */
+  color: white; /* text color */
+  border: none; /* no border */
+  font-size: 20px; /* font size */
+  padding: 10px 20px; /* padding */
+  position: absolute; /* position button at the absolute bottom */
+  bottom: 50px;
+  left: 50%; /* center button horizontally */
+  transform: translateX(-50%); /* center button horizontally */
+}
+
+/* Arrow icon */
+#explore-button i {
+  margin-left: 10px; /* Add margin to the left of the arrow */
+}
+
+/* create a class to fade out the welcome-text element */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/* create a class to fade in the about-us section element */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  nav {
+    margin: 20px auto;
+  }
+
+  #company-name {
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #welcome-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .welcome-sign {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  #welcome-text {
+    font-size: 40px; /* adjust as needed */
+    margin: 20px;
+  }
+
+  #welcome-brand {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  #about-us-section {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 0;
+    width: 60%;
+  }
+
+  #explore-button {
+    font-size: 13px; /* font size */
+    bottom: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #about-us-section {
+    width: 30%;
+    margin-left: 200px;
+  }
+}
+
+#projects-div {
+  width: 100%;
+  background-color: #091229;
+  display: flex;
+  flex-wrap: wrap; /* allows elements to wrap to the next line */
+  flex-direction: column;
+  justify-content: center; /* center elements horizontally */
+  align-items: center; /* center elements vertically */
+}
+
+#about-section h2 {
+  width: fit-content;
+  border-bottom: white 2px solid;
+  margin: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#about-section h2:hover {
+  color: #56a8c7;
+  border-color: #f9adf1;
+  transition: color 0.8s ease-in, border-color 0.5s ease-in;
+}
+
+#about-section {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #0a0b19, black);
+}
+
+#about-section p {
+  text-align: left;
+  margin: 20px;
+  width: 60%;
+}
+
+#project-carousel h2 {
+  width: fit-content;
+  border-bottom: white 2px solid;
+  margin: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#project-carousel h2:hover {
+  color: #56a8c7;
+  border-color: #f9adf1;
+  transition: color 0.8s ease-in, border-color 0.5s ease-in;
+}
+
+#project-carousel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+
+/* Style the prev and next buttons */
+#project-carousel .prev,
+#project-carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a background color to the prev and next buttons */
+#project-carousel .prev:hover,
+#project-carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the prev button to the left */
+#project-carousel .prev {
+  left: 80px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the next button to the right */
+#project-carousel .next {
+  right: 80px;
+  border-radius: 3px 0 0 3px;
+}
+
+#project-carousel .carousel-slide img {
+  max-width: 100%; /* make the image responsive */
+  width: 600px;
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+#sign-up-section {
+  padding: 20px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 0;
+  color: white;
+  background: linear-gradient(to bottom, black, #0a0b19);
+}
+
+#sign-up-section h2 {
+  width: fit-content;
+  border-bottom: white 2px solid;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#sign-up-section h2:hover {
+  color: #56a8c7;
+  border-color: #f9adf1;
+  transition: color 0.8s ease-in, border-color 0.5s ease-in;
+}
+
+.form-container {
+  width: 500px;
+  max-width: 100vw;
+  margin: 20px 50px 20px 20px;
+}
+
+.form-row {
+  margin: 10px 0;
+}
+
+.form-row label {
+  width: 50%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-row input[type="submit"] {
+  width: 200px;
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-row input[type="submit"]:hover {
+  background: #091229;
+  color: white;
+  transition: background 0.5s ease-in, color 0.5s ease-in;
+}
+
+#sign-up-text {
+  width: 500px;
+  padding: 20px;
+}
+
+#contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0a0b19;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 20px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  color: white;
+  background-color: #0a0b19;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+.fa:focus {
+  color: white;
+  background-color: #0a0b19;
+  text-decoration: none;
+}
+
+.fa-github {
+  background: white;
+  color: black;
+}
+
+.fa-google {
+  background: white;
+  color: black;
+}
+
+.fa-wordpress {
+  background: white;
+  color: black;
+}
+
+footer {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  border-top: white 2px solid;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
